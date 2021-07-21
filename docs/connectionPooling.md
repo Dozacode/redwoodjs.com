@@ -15,6 +15,7 @@ Production Redwood apps should enable connection pooling in order to properly sc
 For Postgres running on [Supabase](https://supabase.io) see: [PgBouncer is now available in Supabase](https://supabase.io/blog/2021/04/02/supabase-pgbouncer#using-connection-pooling-in-supabase).
 
 All new Supabase projects include connection pooling using [PgBouncer](https://www.pgbouncer.org/).
+>To use Prisma Client with PgBouncer from a serverless function, add the ```?pgbouncer=true flag``` to the PostgreSQL connection URL.  
 
 ## Heroku
 For Postgres, see [Postgres Connection Pooling](https://devcenter.heroku.com/articles/postgres-connection-pooling).
